@@ -1,18 +1,15 @@
 #! /usr/bin/env node
 var shell = require("shelljs");
-const path = require("path");
 
-const args = app.parse();
+const args = process.argv.slice(2);
 
-switch (args.command[0]) {
+switch (args[0]) {
   case "start":
-    shell.exec("echo start");
+    shell.exec("webpack serve --config ./node_modules/r3f-pack/bin/webpack.dev.js");
     break;
   case "build":
-    shell.exec("echo build");
+    shell.exec('cpy "public/**" build && webpack --config ./node_modules/r3f-pack/bin/webpack.prod.js');
     break;
+  default:
+    console.log("arg not recognised");
 }
-
-// process.env.PATH +=
-//   path.delimiter + path.join(process.cwd(), "node_modules", ".bin");
-// shell.exec("prettier 'src/**/*.{js,json}' --write");
