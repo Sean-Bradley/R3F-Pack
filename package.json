@@ -1,7 +1,7 @@
 {
   "name": "r3f-pack",
   "version": "2.0.1",
-  "description": "todo",
+  "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "bin": {
     "r3f-pack": "bin/r3f-pack.js"
