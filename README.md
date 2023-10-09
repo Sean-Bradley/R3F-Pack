@@ -93,7 +93,8 @@ Visit http://127.0.0.1:8080
 
 ## Troubleshooting
 
-This is quite a minimal project, and I developed it to work for all of my own use cases. If it is missing something that you need, I may be able to add it, or if you know how to fix it yourself, then you can make a pull request.
+This is quite a minimal project, and only mimics the functionality of `react-scripts` that I actually used. If it is missing something that you need, I may be able to add it, or if you know how to do it yourself, then you can make a pull request.
 
 Regards
+
 Sean
