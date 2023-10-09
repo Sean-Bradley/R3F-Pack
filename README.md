@@ -2,6 +2,8 @@
 
 A simplified and maintained `react-scripts` alternative.
 
+![Zero vulnerabilities](./img/0vulnerabilities.jpg)
+
 `react-scripts` is deprecated, but it was good while it lasted.
 
 It now has many out of date dependencies and working with it sometimes requires quite a few manual band-aids.
@@ -20,7 +22,6 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 - Production `bundle.js` contains a hash in its name to prevent caching
 - It indicates 0 vulnerabilities when running `npm install`, at the time of writing this message
 
-![Zero vulnerabilities](./img/0vulnerabilities.jpg)
 
 ## Install
 
