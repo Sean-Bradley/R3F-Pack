@@ -38,7 +38,7 @@ And then replace the `start` and `build` commands in your existing `scripts` nod
 }
 ```
 
-## Development 
+## Development
 
 To start in development mode,
 
@@ -59,3 +59,25 @@ npm run build
 A production quality `bundles.js` will be compiled and all static files and folders under `./public` will be copied to the `./build` folder ready for deployment.
 
 Upload or deploy the contents of the `./build` folder to the location served by your web server.
+
+To test your production build locally you can use `http-server`
+
+Install it if you don't already have it.
+
+```bash
+npm install http-server
+```
+
+Start it
+
+```bash
+http-server .\build\
+```
+
+or if using PowerShell
+
+```bash
+http-server.cmd .\build\
+```
+
+Visit http://127.0.0.1:8080
