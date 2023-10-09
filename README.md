@@ -66,7 +66,7 @@ To test your production build locally you can use `http-server`
 Install it if you don't already have it.
 
 ```bash
-npm install http-server
+npm install --global http-server
 ```
 
 Start it
