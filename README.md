@@ -4,7 +4,7 @@ A simplified and maintained `react-scripts` alternative.
 
 `react-scripts` is deprecated, but it was good while it lasted.
 
-It now has many out of date packages and working with it sometimes requires quite a few manual band-aids.
+It now has many out of date dependencies and working with it sometimes requires quite a few manual band-aids.
 
 So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.net/react-three-fiber/examples/), and it may work with your existing React code also.
 
@@ -90,3 +90,10 @@ http-server.cmd .\build\
 ```
 
 Visit http://127.0.0.1:8080
+
+## Troubleshooting
+
+This is quite a minimal project, and I developed it to work for all of my own use cases. If it is missing something that you need, I may be able to add it, or if you know how to fix it yourself, then you can make a pull request.
+
+Regards
+Sean
