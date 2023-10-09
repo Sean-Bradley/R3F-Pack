@@ -38,7 +38,7 @@ module.exports = {
 		})
 	],
     output: {
-        filename: '[hash].bundle.js',
+        filename: '[fullhash].bundle.js',
         path: path.resolve(__dirname, '../../../build'),
     },
 }
