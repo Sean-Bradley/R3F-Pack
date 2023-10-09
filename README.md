@@ -6,8 +6,6 @@ A simplified and maintained `react-scripts` alternative.
 
 It now has many out of date dependencies and working with it sometimes requires quite a few manual band-aids.
 
-![Many vulnerabilities](/img/16vulnerabilities.jpg)
-
 So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.net/react-three-fiber/examples/), and it may work with your existing React code also.
 
 `R3F-Pack` runs very similar to how `react-scripts` works, and your project structure remains the same.
