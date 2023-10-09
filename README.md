@@ -6,6 +6,8 @@ A simplified and maintained `react-scripts` alternative.
 
 It now has many out of date dependencies and working with it sometimes requires quite a few manual band-aids.
 
+![Many vulnerabilities](/img/16vulnerabilities.jpg)
+
 So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.net/react-three-fiber/examples/), and it may work with your existing React code also.
 
 `R3F-Pack` runs very similar to how `react-scripts` works, and your project structure remains the same.
@@ -17,6 +19,8 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 - `npm run build` builds a production quality version of your app, and will copy all static files & folders under `./public` to the `./build` folder ready for deployment
 - Production `bundle.js` contains a hash in its name to prevent caching
 - It indicates 0 vulnerabilities when running `npm install`, at the time of writing this message
+
+![Zero vulnerabilities](./img/0vulnerabilities.jpg)
 
 ## Install
 
