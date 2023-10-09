@@ -15,6 +15,7 @@ So I created this `R3F-Pack`. I wrote it for my R3F examples, and it may work wi
 - It enables Hot Module Reloading (HMR)
 - It serves the development version from the `./public` folder
 - `npm run build` builds a production quality version of your app, and will copy all static files & folders under `./public` to the `./build` folder ready for deployment
+- Production `bundle.js` contains a hash in its name to prevent caching
 - It indicates 0 vulnerabilities when running `npm install`, at the time of writing this message
 
 ## Install
@@ -46,7 +47,7 @@ To start in development mode,
 npm start
 ```
 
-A browser should open your React application at `http://localhost:3000`
+Visit http://127.0.0.1:3000
 
 ## Production
 
@@ -56,7 +57,7 @@ To build production
 npm run build
 ```
 
-A production quality `bundles.js` will be compiled and all static files and folders under `./public` will be copied to the `./build` folder ready for deployment.
+A production quality `bundle.js` will be compiled and all static files and folders under `./public` will be copied to the `./build` folder ready for deployment.
 
 Upload or deploy the contents of the `./build` folder to the location served by your web server.
 
