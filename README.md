@@ -20,6 +20,14 @@ So I created this `R3F-Pack`. I wrote it for my R3F examples, and it may work wi
 
 ## Install
 
+First uninstall `react-scripts`
+
+```bash
+npm uninstall react-scripts
+```
+
+Next, install `r3f-pack`
+
 ```bash
 npm install r3f-pack --save-dev
 ```
