@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/r3f-pack) ![npm](https://img.shields.io/npm/dw/r3f-pack)
+
 # R3F-Pack
 
 A simplified and maintained `react-scripts` alternative.
