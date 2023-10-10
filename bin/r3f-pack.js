@@ -2,7 +2,7 @@
 console.log(
   "\nR3F-Pack : A simplified and maintained react-scripts alternative.\n"
 );
-var shell = require("shelljs");
+const shell = require("shelljs");
 
 if (process.argv[2]) {
   const args = process.argv.slice(2);

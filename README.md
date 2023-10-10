@@ -99,6 +99,24 @@ Visit http://127.0.0.1:8080
 
 This is quite a minimal project, and only mimics the functionality of `react-scripts` that I actually used. If it is missing something that you need, I may be able to add it, or if you know how to do it yourself, then you can make a pull request.
 
+### babel-loader doesn't exist
+
+`r3f-pack` and `react-scripts` share some dependencies. You should uninstall `react-scripts` before you install `r3f-pack`.
+
+If you uninstall `react-scripts` after you've installed `r3f-pack`, then you will have also uninstalled some dependencies also required of `r3f-pack`
+
+So, first uninstall `react-scripts`
+
+```bash
+npm uninstall react-scripts
+```
+
+and then install `r3f-pack`
+
+```bash
+npm install r3f-pack --save-dev
+```
+
 Regards
 
 Sean
