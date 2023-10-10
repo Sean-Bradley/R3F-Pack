@@ -11,9 +11,6 @@
   ],
   "homepage": "https://github.com/Sean-Bradley/R3F-Pack",
   "repository": "https://github.com/Sean-Bradley/R3F-Pack",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "bin": {
     "r3f-pack": "bin/r3f-pack.js"
   },

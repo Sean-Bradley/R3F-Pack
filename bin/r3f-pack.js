@@ -1,4 +1,7 @@
 #! /usr/bin/env node
+console.log(
+  "\nR3F-Pack : A simplified and maintained react-scripts alternative.\n"
+);
 var shell = require("shelljs");
 
 if (process.argv[2]) {
@@ -25,6 +28,6 @@ if (process.argv[2]) {
 
 function usage() {
   console.log(
-    "\u001b[0mUsage:\n\n\u001b[32mr3f-pack start\u001b[0m : Starts a development mode HMR dev server at http://127.0.0.1:3000\n\n\u001b[32mr3f-pack build\u001b[0m : Builds producton quality bundle.js and copies all files from ./public to ./build ready for deployment\n\nFor more info, visit \u001b[36mhttps://github.com/Sean-Bradley/R3F-Pack\u001b[0m\n"
+    "\u001b[0mUsage:\n\n\u001b[32mr3f-pack start\u001b[0m : Starts a development mode HMR dev server at http://127.0.0.1:3000\n\n\u001b[32mr3f-pack build\u001b[0m : Builds producton quality bundle.js and copies all files from ./public to ./build ready for deployment\n\nFor more detailed instructions, visit \u001b[36mhttps://github.com/Sean-Bradley/R3F-Pack\u001b[0m\n"
   );
 }
