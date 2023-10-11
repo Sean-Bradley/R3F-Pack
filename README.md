@@ -4,6 +4,8 @@
 
 A simplified and maintained `react-scripts` alternative.
 
+![R3F-Pack Logo](./img/r3f-pack-logo-256x256.png)
+
 `react-scripts` is deprecated, but it was good while it lasted.
 
 It now has many out of date dependencies and working with it sometimes requires quite a few manual band-aids.
