@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 console.log(
   "\nR3F-Pack : A simplified and maintained react-scripts alternative.\n"
 );
