@@ -103,9 +103,9 @@ This is quite a minimal project, and only mimics the functionality of `react-scr
 
 ### babel-loader doesn't exist
 
-`r3f-pack` and `react-scripts` share some dependencies. You should uninstall `react-scripts` before you install `r3f-pack`.
+`r3f-pack` and `react-scripts` share some dependencies. However, you can uninstall `react-scripts` before you install `r3f-pack` if you want to keep your code and dependencies neater.
 
-If you uninstall `react-scripts` after you've installed `r3f-pack`, then you will have also uninstalled some dependencies also required of `r3f-pack`
+If you uninstall `react-scripts` <u>after</u> you've installed `r3f-pack`, then you will have also uninstalled some dependencies also required of `r3f-pack`
 
 So, first uninstall `react-scripts`
 
