@@ -20,6 +20,7 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 - It serves the development version from the `./public` folder
 - `npm run build` builds a production quality version of your app, and will copy all static files & folders under `./public` to the `./build` folder ready for deployment
 - Production `bundle.js` contains a hash in its name to prevent caching
+- It supports building with [TypeScript](https://sbcode.net/react-three-fiber/typescript/)
 - It indicates 0 vulnerabilities when running `npm install`, at the time of writing this message
 
 ![Zero vulnerabilities](./img/0vulnerabilities.jpg)
