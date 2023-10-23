@@ -12,6 +12,12 @@ It now has many out of date dependencies and working with it sometimes requires 
 
 So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.net/react-three-fiber/examples/), and it may work with your existing React code also.
 
+## Video Tutorial
+
+[![R3F-Pack replacement for React-Scripts](https://img.youtube.com/vi/w07muxLvPFA/0.jpg)](https://www.youtube.com/watch?v=w07muxLvPFA&list=PLKWUX7aMnlEK9DrrY1yXdiUBro1CryZaX)
+
+## About
+
 `R3F-Pack` runs very similar to how `react-scripts` works, and your project structure remains the same.
 
 - It serves the dev version on port 3000
