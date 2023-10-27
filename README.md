@@ -22,7 +22,7 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 
 - It serves the dev version on port 3000
 - It auto opens the browser at address `http://localhost:3000`
-- It enables Hot Module Reloading (HMR)
+- It enables Hot Module Reloading (HMR) with fast refresh
 - It serves the development version from the `./public` folder
 - `npm run build` builds a production quality version of your app, and will copy all static files & folders under `./public` to the `./build` folder ready for deployment
 - Production `bundle.js` contains a hash in its name to prevent caching
