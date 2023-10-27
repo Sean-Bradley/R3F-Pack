@@ -129,7 +129,7 @@ npm start
 
 ## Troubleshooting
 
-This is quite a minimal project, and only mimics the functionality of `react-scripts` that I actually used. If it is missing something that you need, I may be able to add it, or if you know how to do it yourself, then you can make a pull request.
+This is quite a minimal project, and only mimics the basic functionality of `react-scripts`. If it is missing something that you need, I may be able to add it, or if you know how to do it yourself, then you can make a pull request.
 
 ### babel-loader doesn't exist
 
@@ -137,17 +137,33 @@ This is quite a minimal project, and only mimics the functionality of `react-scr
 
 If you uninstall `react-scripts` <u>after</u> you've installed `r3f-pack`, then you will have also uninstalled some dependencies also required of `r3f-pack`
 
-So, first uninstall `react-scripts`
+So, you will need to clean up your `./node_modules` folder.
+
+First uninstall `react-scripts`
 
 ```bash
 npm uninstall react-scripts
 ```
 
-and then install `r3f-pack`
+Next, also uninstall `r3f-pack` just to be sure you got everything.
+
+```bash
+npm uninstall react-scripts
+```
+
+Then re-install `r3f-pack`
 
 ```bash
 npm install r3f-pack --save-dev
 ```
+
+Now start development.
+
+```bash
+npm start
+```
+
+Your browser should auto open to http://127.0.0.1:3000
 
 Regards
 
