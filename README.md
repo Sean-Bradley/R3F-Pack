@@ -31,7 +31,9 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 
 ![Zero vulnerabilities](./img/0vulnerabilities.jpg)
 
-## Install
+## Installing in Existing React Projects
+
+If your project is already using `react-scripts`, then you can replace it with `R3F-Pack`
 
 First uninstall `react-scripts`
 
@@ -103,6 +105,27 @@ http-server.cmd .\build\
 ```
 
 Visit http://127.0.0.1:8080
+
+## Boilerplate
+
+I have many boilerplate branches that use `R3F-pack` by default. You can have a ready-made project to begin from by following these commands.
+
+```bash
+git clone https://github.com/Sean-Bradley/React-Three-Fiber-Boilerplate.git
+cd React-Three-Fiber-Boilerplate
+npm install
+npm start
+```
+
+There are over 60 branches in the [React-Three-Fiber-Boilerplate](https://github.com/Sean-Bradley/React-Three-Fiber-Boilerplate) repository.
+
+You may decide you want something more sophisticated to begin from, for example, you could switch to the `componentize` branch.
+
+```bash
+git checkout componentize
+npm install
+npm start
+```
 
 ## Troubleshooting
 
