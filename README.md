@@ -39,6 +39,12 @@ To start a brand-new React project, run
 npx new-cra@latest my-app
 ```
 
+Or, to also include TypeScript
+
+```bash
+npx new-cra@latest my-app -ts
+```
+
 This will create a very basic React application named `my-app` that you can start developing from.
 
 After the installation has finished,
@@ -50,9 +56,9 @@ npm start
 
 Visit http://127.0.0.1:3000
 
-## Installing `R3F-pack` in Existing React Projects
+## Installing `R3F-pack` for Existing React Projects
 
-If you already have an existing app that currently uses `react-scripts`, and you want to convert it to use `R3F-pack`, then follow the next steps below.
+If you already have an existing app that currently uses `react-scripts`, and you want to convert it to use `R3F-pack`, then use these steps below.
 
 First uninstall `react-scripts`
 
