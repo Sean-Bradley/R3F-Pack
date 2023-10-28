@@ -31,9 +31,19 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 
 ![Zero vulnerabilities](./img/0vulnerabilities.jpg)
 
+## Starting a new Project
+
+To start a new React project from nothing, run
+
+```bash
+npx new-cra@latest my-app
+```
+
+This will create a very basic React application that you can start developing from.
+
 ## Installing in Existing React Projects
 
-If your project is already using `react-scripts`, then you can replace it with `R3F-Pack`
+If you already have an existing app that currently uses `react-scripts`, and you want to convert it to use `R3F-pack`, then follow the next steps below.
 
 First uninstall `react-scripts`
 
@@ -108,7 +118,7 @@ Visit http://127.0.0.1:8080
 
 ## Boilerplate
 
-I have many boilerplate branches that use `R3F-pack` by default. You can have a ready-made project to begin from by following these commands.
+I have many boilerplate branches that use `R3F-pack` by default. You can have a ready-made project to begin from by following these commands instead.
 
 ```bash
 git clone https://github.com/Sean-Bradley/React-Three-Fiber-Boilerplate.git
