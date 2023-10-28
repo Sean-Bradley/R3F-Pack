@@ -33,15 +33,24 @@ So I created this `R3F-Pack`. I wrote it for my [R3F examples](https://sbcode.ne
 
 ## Starting a new Project
 
-To start a new React project from nothing, run
+To start a brand-new React project, run
 
 ```bash
 npx new-cra@latest my-app
 ```
 
-This will create a very basic React application that you can start developing from.
+This will create a very basic React application named `my-app` that you can start developing from.
 
-## Installing in Existing React Projects
+After the installation has finished,
+
+```bash
+cd my-app
+npm start
+```
+
+Visit http://127.0.0.1:3000
+
+## Installing `R3F-pack` in Existing React Projects
 
 If you already have an existing app that currently uses `react-scripts`, and you want to convert it to use `R3F-pack`, then follow the next steps below.
 
