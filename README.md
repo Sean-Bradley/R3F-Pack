@@ -56,6 +56,15 @@ npm start
 
 Visit http://127.0.0.1:3000
 
+You don't have to create an app named `my-app`, you could name it anything.
+
+```bash
+npx new-cra anything
+cs anything
+npm start
+```
+
+
 ## Installing `R3F-pack` for Existing React Projects
 
 If you already have an existing app that currently uses `react-scripts`, and you want to convert it to use `R3F-pack`, then use these steps below.
