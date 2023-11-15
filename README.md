@@ -60,10 +60,11 @@ You don't have to create an app named `my-app`, you could name it anything.
 
 ```bash
 npx new-cra anything
-cs anything
+cd anything
 npm start
 ```
 
+Name it anything you like.
 
 ## Installing `R3F-pack` for Existing React Projects
 
