@@ -9,18 +9,18 @@ function getEntry() {
 }
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   performance: {
-    hints: false
+    hints: false,
   },
   entry: "./src/" + getEntry(),
   module: {
     rules: [
       {
-        test: /\.(js|jsx|tsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         resolve: {
-          extensions: [".js", ".jsx", ".tsx"],
+          extensions: [".js", ".jsx", "ts", ".tsx"],
         },
         use: {
           loader: "babel-loader",
@@ -43,7 +43,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [       
+  plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../../../public/index.html"),
     }),
