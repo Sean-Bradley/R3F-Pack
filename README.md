@@ -200,6 +200,6 @@ npm start
 
 Your browser should auto open to http://127.0.0.1:3000
 
-Regards
+## Sponsoring
 
-Sean
+If you would like me to update your `react-scripts`/`CRA` project to use `R3F-Pack`, then consider [sponsoring](https://github.com/sponsors/Sean-Bradley) and notify me of your repository.
