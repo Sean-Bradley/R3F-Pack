@@ -1,6 +1,9 @@
 #! /usr/bin/env node
+const packageJson = require("./../package.json");
 console.log(
-  "\nR3F-Pack : A simplified and maintained react-scripts alternative.\n"
+  "\nR3F-Pack [" +
+    packageJson.version +
+    "] : A simplified and maintained react-scripts alternative.\n"
 );
 const shell = require("shelljs");
 
