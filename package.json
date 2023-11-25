@@ -1,6 +1,6 @@
 {
   "name": "r3f-pack",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "keywords": [
@@ -15,7 +15,7 @@
     "r3f-pack": "bin/r3f-pack.js"
   },
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
