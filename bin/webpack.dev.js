@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 function getEntry() {
   return fs
@@ -38,7 +38,7 @@ module.exports = {
               ["@babel/preset-react", { runtime: "automatic" }],
               "@babel/preset-typescript",
             ],
-            plugins: [require.resolve('react-refresh/babel')]
+            plugins: [require.resolve("react-refresh/babel")],
           },
         },
       },
@@ -52,10 +52,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [       
+  plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../../../public/index.html"),
     }),
-    new ReactRefreshWebpackPlugin({overlay: false})
-  ]
+    new ReactRefreshWebpackPlugin({ overlay: false }),
+  ],
 };
