@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
+const InterpolateHtmlPlugin = require("@gozenc/interpolate-html-plugin")
 
 function getEntry() {
   return fs
@@ -46,6 +47,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../../../public/index.html"),
+    }),
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
+      'PUBLIC_URL': "",
     }),
   ],
   output: {

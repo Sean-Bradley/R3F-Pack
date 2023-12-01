@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const InterpolateHtmlPlugin = require("@gozenc/interpolate-html-plugin")
 
 function getEntry() {
   return fs
@@ -57,5 +58,8 @@ module.exports = {
       template: path.resolve(__dirname, "../../../public/index.html"),
     }),
     new ReactRefreshWebpackPlugin({ overlay: false }),
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
+      'PUBLIC_URL': "",
+    }),
   ],
 };
