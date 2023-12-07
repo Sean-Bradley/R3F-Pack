@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
-const InterpolateHtmlPlugin = require("@gozenc/interpolate-html-plugin")
+const InterpolateHtmlPlugin = require("@gozenc/interpolate-html-plugin");
 
 function getEntry() {
   return fs
@@ -48,8 +48,12 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf|png|jpg|jpeg|gif|svg|json|ico)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf|png|jpg|jpeg|gif|svg|ico)$/i,
         type: "asset/inline",
+      },
+      {
+        test: /\.json$/,
+        type: "json",
       },
     ],
   },
@@ -59,7 +63,7 @@ module.exports = {
     }),
     new ReactRefreshWebpackPlugin({ overlay: false }),
     new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
-      'PUBLIC_URL': "",
+      PUBLIC_URL: "",
     }),
   ],
 };
