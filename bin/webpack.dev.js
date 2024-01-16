@@ -23,6 +23,9 @@ module.exports = {
     allowedHosts: "all",
     historyApiFallback: true,
   },
+  output: {
+    publicPath: '/',
+  },
   entry: "./src/" + getEntry(),
   module: {
     rules: [
