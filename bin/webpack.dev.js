@@ -21,6 +21,10 @@ module.exports = {
     open: true,
     port: 3000,
     allowedHosts: "all",
+    historyApiFallback: true,
+  },
+  output: {
+    publicPath: '/',
   },
   entry: "./src/" + getEntry(),
   module: {
