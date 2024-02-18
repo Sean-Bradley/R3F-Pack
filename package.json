@@ -10,7 +10,10 @@
     "bundler"
   ],
   "homepage": "https://sbcode.net/react-three-fiber/r3f-pack/",
-  "repository": "https://github.com/Sean-Bradley/R3F-Pack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sean-Bradley/R3F-Pack.git"
+  },
   "bin": {
     "r3f-pack": "bin/r3f-pack.js"
   },
