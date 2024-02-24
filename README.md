@@ -56,7 +56,7 @@ npm start
 
 Visit http://127.0.0.1:3000
 
-You don't have to create an app named `my-app`, you could name it anything.
+You don't have to name your app `my-app`, you could name it `anything` or `whatever`.
 
 ```bash
 npx new-cra anything
@@ -64,7 +64,7 @@ cd anything
 npm start
 ```
 
-Name it anything you like.
+It's your choice, use any name you like. The name should only contain characters that are lowercase, alphanumeric, hyphens and/or underscores.
 
 ## Installing `R3F-pack` for Existing React Projects
 
