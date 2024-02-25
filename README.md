@@ -162,6 +162,18 @@ npm install
 npm start
 ```
 
+Or maybe checkout one of these other branches,
+
+```bash
+git checkout obstacleCourse
+git checkout componentize
+git checkout pinball
+git checkout tween
+git checkout followCam
+```
+
+There are many branches to look at, see here at [https://github.com/Sean-Bradley/React-Three-Fiber-Boilerplate/branches/active](https://github.com/Sean-Bradley/React-Three-Fiber-Boilerplate/branches/active)
+
 ## Troubleshooting
 
 This is quite a minimal project, and only mimics the basic functionality of `react-scripts`. If it is missing something that you need, I may be able to add it, or if you know how to do it yourself, then you can make a pull request.
@@ -183,7 +195,7 @@ npm uninstall react-scripts
 Next, also uninstall `r3f-pack` just to be sure you got everything.
 
 ```bash
-npm uninstall react-scripts
+npm uninstall r3f-pack
 ```
 
 Then re-install `r3f-pack`
@@ -202,4 +214,4 @@ Your browser should auto open to http://127.0.0.1:3000
 
 ## Sponsoring
 
-If you would like me to update your `react-scripts`/`CRA` project to use `R3F-Pack`, then consider [sponsoring](https://github.com/sponsors/Sean-Bradley) and notify me of your repository so I can make a pull request.
+If you would like me to update your `react-scripts`/`CRA` project to use `R3F-Pack`, then consider [sponsoring](https://github.com/sponsors/Sean-Bradley) and notify me of your repository, so I can make a pull request.
