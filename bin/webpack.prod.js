@@ -50,7 +50,7 @@ module.exports = {
     new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
       PUBLIC_URL: ''
     }),
-    new Dotenv()
+    new Dotenv({ silent: true })
   ],
   output: {
     filename: '[fullhash].bundle.js',
