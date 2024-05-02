@@ -18,7 +18,7 @@ module.exports = {
     },
     hot: true,
     open: true,
-    port: 3000,
+    port: process.env.WDS_SOCKET_PORT || 3000,
     allowedHosts: 'all',
     historyApiFallback: true
   },
@@ -37,7 +37,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', ['@babel/preset-react', { runtime: 'automatic' }], '@babel/preset-typescript'],
+            presets: [
+              '@babel/preset-env',
+              ['@babel/preset-react', { runtime: 'automatic' }],
+              '@babel/preset-typescript'
+            ],
             plugins: [require.resolve('react-refresh/babel')]
           }
         }
