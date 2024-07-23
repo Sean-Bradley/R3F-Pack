@@ -32,7 +32,7 @@ if (process.argv[2]) {
       break
     case 'buildByDate':
       shell.exec(
-        `cpy public/**" build/${getFormattedDate} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`
+        `cpy "public/**" build/${getFormattedDate()} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`
       )
       break
     default:
