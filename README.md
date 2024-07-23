@@ -92,6 +92,7 @@ And then replace the `start` and `build` commands in your existing `scripts` nod
 +       "start": "r3f-pack start",
 -       "build": "react-scripts build",
 +       "build": "r3f-pack build"
++       "buildByDate": "r3f-pack buildByDate"
     },
     ...
 }
@@ -118,6 +119,14 @@ npm run build
 A production quality `bundle.js` will be compiled and all static files and folders under `./public` will be copied to the `./build` folder ready for deployment.
 
 Upload or deploy the contents of the `./build` folder to the location served by your web server.
+
+To build production by date
+
+```bash
+npm run buildByDate
+```
+
+This command will generate a production build in a folder named with the current date (e.g., ./build/23-07-2024). This can help in organizing builds by date for easier management and deployment tracking.
 
 To test your production build locally you can use `http-server`
 
