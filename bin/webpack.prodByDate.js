@@ -5,17 +5,19 @@ const InterpolateHtmlPlugin = require('@gozenc/interpolate-html-plugin')
 const Dotenv = require('dotenv-webpack')
 
 function getEntry() {
-  return fs.readdirSync('./src/').filter((file) => file.match(/index\.(js|jsx|tsx)$/))
+  return fs
+    .readdirSync('./src/')
+    .filter((file) => file.match(/index\.(js|jsx|tsx)$/))
 }
 
 const getFormattedDate = () => {
-	const date = new Date();
-	const day = String(date.getDate()).padStart(2, '0');
-	const month = String(date.getMonth() + 1).padStart(2, '0');
-	const year = date.getFullYear();
-  
-	return `${day}-${month}-${year}`;
-  };
+  const date = new Date()
+  const day = String(date.getDate()).padStart(2, '0')
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const year = date.getFullYear()
+
+  return `${day}-${month}-${year}`
+}
 
 module.exports = {
   mode: 'production',
@@ -34,7 +36,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', ['@babel/preset-react', { runtime: 'automatic' }], '@babel/preset-typescript']
+            presets: [
+              '@babel/preset-env',
+              ['@babel/preset-react', { runtime: 'automatic' }],
+              '@babel/preset-typescript'
+            ]
           }
         }
       },

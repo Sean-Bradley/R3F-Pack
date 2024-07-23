@@ -6,7 +6,9 @@ const InterpolateHtmlPlugin = require('@gozenc/interpolate-html-plugin')
 const Dotenv = require('dotenv-webpack')
 
 function getEntry() {
-  return fs.readdirSync('./src/').filter((file) => file.match(/index\.(js|jsx|tsx)$/))
+  return fs
+    .readdirSync('./src/')
+    .filter((file) => file.match(/index\.(js|jsx|tsx)$/))
 }
 
 module.exports = {

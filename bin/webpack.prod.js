@@ -5,7 +5,9 @@ const InterpolateHtmlPlugin = require('@gozenc/interpolate-html-plugin')
 const Dotenv = require('dotenv-webpack')
 
 function getEntry() {
-  return fs.readdirSync('./src/').filter((file) => file.match(/index\.(js|jsx|tsx)$/))
+  return fs
+    .readdirSync('./src/')
+    .filter((file) => file.match(/index\.(js|jsx|tsx)$/))
 }
 
 module.exports = {
@@ -25,7 +27,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', ['@babel/preset-react', { runtime: 'automatic' }], '@babel/preset-typescript']
+            presets: [
+              '@babel/preset-env',
+              ['@babel/preset-react', { runtime: 'automatic' }],
+              '@babel/preset-typescript'
+            ]
           }
         }
       },
