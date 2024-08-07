@@ -5,7 +5,8 @@ console.log(
     packageJson.version +
     '] : A simplified and maintained react-scripts alternative.\n'
 )
-const shell = require('shelljs')
+
+const { execSync } = require('child_process')
 
 const getFormattedDate = () => {
   const date = new Date()
@@ -21,18 +22,21 @@ if (process.argv[2]) {
 
   switch (args[0]) {
     case 'start':
-      shell.exec(
-        'webpack serve --config ./node_modules/r3f-pack/bin/webpack.dev.js'
+      execSync(
+        'webpack serve --config ./node_modules/r3f-pack/bin/webpack.dev.js',
+        { stdio: 'inherit' }
       )
       break
     case 'build':
-      shell.exec(
-        'cpy "public/**" build && webpack --config ./node_modules/r3f-pack/bin/webpack.prod.js'
+      execSync(
+        'cpy "public/**" build && webpack --config ./node_modules/r3f-pack/bin/webpack.prod.js',
+        { stdio: 'inherit' }
       )
       break
     case 'buildByDate':
-      shell.exec(
-        `cpy "public/**" build/${getFormattedDate()} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`
+      execSync(
+        `cpy "public/**" build/${getFormattedDate()} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`,
+        { stdio: 'inherit' }
       )
       break
     default:

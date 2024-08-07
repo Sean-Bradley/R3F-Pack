@@ -1,6 +1,6 @@
 {
   "name": "r3f-pack",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "keywords": [
@@ -33,7 +33,6 @@
     "react-refresh": "^0.14.2",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
-    "shelljs": "^0.8.5",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "webpack": "^5.93.0",
