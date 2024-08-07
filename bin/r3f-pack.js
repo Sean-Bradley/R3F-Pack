@@ -5,7 +5,7 @@ console.log(
     packageJson.version +
     '] : A simplified and maintained react-scripts alternative.\n'
 )
-const execa = require('execa')
+const shell = require('shelljs')
 
 const getFormattedDate = () => {
   const date = new Date()
@@ -21,13 +21,19 @@ if (process.argv[2]) {
 
   switch (args[0]) {
     case 'start':
-      execa('webpack', ['serve', '--config', './node_modules/r3f-pack/bin/webpack.dev.js'])
+      shell.exec(
+        'webpack serve --config ./node_modules/r3f-pack/bin/webpack.dev.js'
+      )
       break
     case 'build':
-      execa('cpy "public/**" build && webpack --config ./node_modules/r3f-pack/bin/webpack.prod.js')
+      shell.exec(
+        'cpy "public/**" build && webpack --config ./node_modules/r3f-pack/bin/webpack.prod.js'
+      )
       break
     case 'buildByDate':
-      execa(`cpy "public/**" build/${getFormattedDate()} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`)
+      shell.exec(
+        `cpy "public/**" build/${getFormattedDate()} && webpack --config ./node_modules/r3f-pack/bin/webpack.prodByDate.js`
+      )
       break
     default:
       console.log('\u001b[31mError : argument not recognised\n')
