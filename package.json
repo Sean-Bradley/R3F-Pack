@@ -1,6 +1,6 @@
 {
   "name": "r3f-pack",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "keywords": [
@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@gozenc/interpolate-html-plugin": "^1.0.2",
@@ -35,7 +35,7 @@
     "sass-loader": "^16.0.0",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
-    "webpack": "^5.93.0",
+    "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   }
