@@ -1,6 +1,6 @@
 {
   "name": "r3f-pack",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "keywords": [
@@ -38,5 +38,12 @@
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
+  },
+  "overrides": {
+    "body-parser": "1.20.3",
+    "serve-static": "2.1.0",
+    "path-to-regexp": "8.1.0",
+    "send": "next",
+    "express": "4.20.0"
   }
 }
