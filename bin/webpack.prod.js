@@ -59,7 +59,8 @@ module.exports = {
     new Dotenv({ silent: true })
   ],
   output: {
-    filename: '/[fullhash].bundle.js',
-    path: path.resolve(__dirname, '../../../build')
+    filename: '[fullhash].bundle.js',
+    path: path.resolve(__dirname, '../../../build'),
+    publicPath: "/"
   }
 }
