@@ -4,6 +4,7 @@ const fs = require('fs')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const InterpolateHtmlPlugin = require('@gozenc/interpolate-html-plugin')
 const Dotenv = require('dotenv-webpack')
+require('dotenv').config({ path: './.env' })
 
 function getEntry() {
   return fs
@@ -20,9 +21,20 @@ module.exports = {
     },
     hot: true,
     open: true,
-    port: process.env.WDS_SOCKET_PORT || 3000,
+    port: process.env.PORT || 3000,
     allowedHosts: 'all',
-    historyApiFallback: true
+    historyApiFallback: true,
+    server: process.env.HTTPS ? {
+      type: 'https',
+      options: {
+        ca: process.env.PATH_CA ? process.env.PATH_CA : undefined,
+        pfx: process.env.PATH_PFX ? process.env.PATH_PFX : undefined,
+        key: process.env.PATH_KEY ? process.env.PATH_KEY : undefined,
+        cert: process.env.PATH_CERT ? process.env.PATH_CERT : undefined,
+        passphrase: process.env.PWD ? process.env.PWD : undefined,
+        requestCert: process.env.REQUEST_CERT === undefined ? undefined : process.env.REQUEST_CERT,
+      }
+    } : 'http'
   },
   output: {
     publicPath: '/'
