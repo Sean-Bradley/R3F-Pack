@@ -70,6 +70,6 @@ module.exports = {
   output: {
     filename: '[fullhash].bundle.js',
     path: path.resolve(__dirname, `../../../build/${getFormattedDate()}`),
-    publicPath: "/"
+    publicPath: '/'
   }
 }
