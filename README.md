@@ -194,7 +194,7 @@ Or maybe checkout one of these other branches,
 git checkout obstacleCourse
 git checkout componentize
 git checkout pinball
-git checkout tween
+git checkout jeasings
 git checkout followCam
 ```
 
