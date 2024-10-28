@@ -92,10 +92,11 @@ And then replace the `start` and `build` commands in your existing `scripts` nod
 +       "start": "r3f-pack start",
 -       "build": "react-scripts build",
 +       "build": "r3f-pack build"
-+       "buildByDate": "r3f-pack buildByDate"
     },
     ...
 }
+
+If you wan
 ```
 
 ## Development
@@ -120,7 +121,21 @@ A production quality `bundle.js` will be compiled and all static files and folde
 
 Upload or deploy the contents of the `./build` folder to the location served by your web server.
 
-To build production by date
+To build a production version into a date named folder, then add this line to your `package.json` scripts section,
+
+```diff
+{
+    ...
+    "scripts": {
+       "start": "r3f-pack start",
+       "build": "r3f-pack build",
++      "buildByDate": "r3f-pack buildByDate"
+    },
+    ...
+}
+```
+
+and then build using the command,
 
 ```bash
 npm run buildByDate
