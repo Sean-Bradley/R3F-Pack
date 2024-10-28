@@ -95,8 +95,6 @@ And then replace the `start` and `build` commands in your existing `scripts` nod
     },
     ...
 }
-
-If you wan
 ```
 
 ## Development
