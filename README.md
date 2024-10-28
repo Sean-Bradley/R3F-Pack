@@ -119,7 +119,9 @@ A production quality `bundle.js` will be compiled and all static files and folde
 
 Upload or deploy the contents of the `./build` folder to the location served by your web server.
 
-To build a production version into a date named folder, then add this line to your `package.json` scripts section,
+### Production Build Organized by Date
+
+To build a production version into a date named folder, then add this line into your `package.json` scripts section,
 
 ```diff
 {
