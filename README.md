@@ -143,6 +143,8 @@ npm run buildByDate
 
 This command will generate a production build in a folder named with the current date (e.g., ./build/23-07-2024). This can help in organizing builds by date for easier management and deployment tracking.
 
+### Test Production Build Locally
+
 To test your production build locally you can use `http-server`
 
 Install it if you don't already have it.
