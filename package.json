@@ -1,6 +1,6 @@
 {
   "name": "r3f-pack",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "A simplified and maintained react-scripts alternative.",
   "author": "Sean Bradley",
   "keywords": [
@@ -19,24 +19,24 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/preset-typescript": "^7.26.0",
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
     "@gozenc/interpolate-html-plugin": "^1.0.2",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-    "babel-loader": "^9.2.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "babel-loader": "^10.0.0",
     "cpy-cli": "^5.0.0",
     "css-loader": "^7.1.2",
-    "dotenv-webpack": "^8.1.0",
+    "dotenv-webpack": "^8.1.1",
     "html-webpack-plugin": "^5.6.3",
-    "react-refresh": "^0.16.0",
-    "sass": "^1.83.0",
-    "sass-loader": "^16.0.4",
+    "react-refresh": "^0.17.0",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.0"
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
